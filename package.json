@@ -7,10 +7,16 @@
     "install:all": "cd server && npm install && cd ../client && npm install",
     "dev:server": "cd server && node index.js",
     "dev:client": "cd client && npx vite --host",
-    "build": "cd client && npx vite build",
-    "start": "cd server && node index.js",
+    "build": "cd client && npm install && npx vite build",
+    "start": "cd server && npm install && node index.js",
     "test": "cd server && node --test ../tests/*.test.js"
   },
-  "keywords": ["chat", "real-time", "sse", "react", "express"],
+  "keywords": [
+    "chat",
+    "real-time",
+    "sse",
+    "react",
+    "express"
+  ],
   "license": "MIT"
 }
