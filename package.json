@@ -1,0 +1,16 @@
+{
+  "name": "real-time-chat",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Real-time chat application with React and Express using Server-Sent Events",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && node index.js",
+    "dev:client": "cd client && npx vite --host",
+    "build": "cd client && npx vite build",
+    "start": "cd server && node index.js",
+    "test": "cd server && node --test ../tests/*.test.js"
+  },
+  "keywords": ["chat", "real-time", "sse", "react", "express"],
+  "license": "MIT"
+}
